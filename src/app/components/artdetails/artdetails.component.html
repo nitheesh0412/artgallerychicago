@@ -1,0 +1,33 @@
+<div *ngIf="singleArt" class="container-fluid ">
+  <div class="row ">
+    
+    <div class="col-md-4 p-5">
+      <img class="artimage" src="https://www.artic.edu/iiif/2/{{singleArt.image_id}}/full/843,/0/default.jpg" class="w-100" height="400px"   >
+    </div>
+    <div class=" p-5 col-md-6 ">
+      <h2> Title : {{singleArt.title}}</h2>
+      <h2>Artist : {{singleArt.artist_title}}</h2>
+      <h2 class="text-muted">date display : <p class="text-muted">{{singleArt.date_display}}</p></h2>
+      
+      <h2 class="text-muted"> artwork type : <p class="text-muted">{{singleArt.artwork_type_title}}</p></h2>
+
+      <h2>share this art: <button class="btn btn-info" (click)="share()"><mat-icon>share</mat-icon></button> </h2>
+      
+      <!-- <div class=""><share-buttons [theme]="'material-dark'"
+        [include]="['facebook','twitter','linkedin','pinterest','reddit','telegram','whatsapp','email','copy']"
+        [show]="9" class="bg-dark"
+       ></share-buttons></div> -->
+    
+      
+    </div>
+    
+  </div>
+  <div class="content ps-5 pe-5">
+    <h2 class="text-dark">Exhibition History</h2>
+      <p>{{singleArt.exhibition_history}}</p>
+      <h2 class="text-dark">Publication History</h2>
+      <p>{{singleArt.publication_history}}</p>
+    <h2 class="text-dark">description</h2>
+    <p> {{singleArt.description}} Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ullam, sit, eaque nostrum rerum officia in voluptatibus reiciendis, minus ipsa deleniti a doloremque tempora aperiam deserunt sint voluptas quibusdam tenetur!</p>
+  </div>
+</div>

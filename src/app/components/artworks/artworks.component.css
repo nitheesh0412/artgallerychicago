@@ -1,0 +1,26 @@
+.searchBox{
+  height: 3rem;
+  margin-top: 1rem;
+  width: 20rem;
+  /* border: 1px solid black; */
+  /* background-color: antiquewhite;
+
+
+   */
+
+   /* position: fixed; */
+
+}
+.cards{
+  margin-left: 75px;
+}
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .cards{
+    margin: 0px !important;
+  }
+  .searchBox{
+    height: 2rem;
+    width: 5rem;
+  }
+}

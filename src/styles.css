@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+.totbody{
+  background-image: url("https://t3.ftcdn.net/jpg/05/88/07/50/360_F_588075097_r1ttVbY4i1Nh6OPdSGatzfP29xe7nTCb.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+@import 'node_modules/bootstrap-icons/font/bootstrap-icons.css';
+

@@ -1,0 +1,37 @@
+<!-- <button class="btn btn-info" (click)="dosomething()">submit</button> -->
+
+<header class=" ">
+  <nav class="navbar navbar-expand-lg bg-dark ">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white " href="">Home</a>
+      <a class="navbar-brand text-white " routerLink="artworks">artworks</a>
+      
+
+      <button class="navbar-toggler btn btn-light bg-light" type="button" data-toggle="collapse"
+        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation"
+        (click)="toggleCollapsed()">
+       <span class="navbar-toggler-icon"></span>
+     </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent" [ngClass]="{'collapse': collapsed, 'navbar-collapse': true}">
+        <ul class="navbar-nav ms-auto pe-3 pt-2 mb-2 mb-lg-0">
+          <a routerLink="favourites">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="red" class="bi bi-suit-heart-fill" viewBox="0 0 20 20">
+              <path d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z"/>
+            </svg> <a class="navbar-brand text-white" href="#" style="text-decoration: none;">Wishlist</a>
+          </a>
+        </ul>
+        <ul class="navbar-nav pe-3 pt-1 mb-2 mb-lg-0">
+          <a  class="navbar-brand text-white" href="" routerLink="aboutus">About</a>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+
+
+<div class="totbody">
+  <router-outlet></router-outlet>
+</div>

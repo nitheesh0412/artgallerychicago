@@ -1,0 +1,43 @@
+.bi-suit-heart-fill{
+  color: red;
+
+  fill: red;
+}
+
+.emptywishlist{
+  font-size: 50px;
+  padding-top: 2rem;
+  color: brown;
+  transition: transform .2s;
+  transform: scale(1.5);
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .emptywishlist{
+    font-size: 30px;
+    padding-top: 2rem;
+    color: brown;
+    transition: transform .2s;
+    transform: scale(1.5);
+  }
+}
+.card{
+  width: 20rem;
+  height: 30rem;
+}
+.card-img-top{
+  width: 20rem;
+  height: 300px;
+}
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .card{
+    width: 16rem;
+    height: 24rem;
+  }
+  .card-img-top{
+    width: 16rem;
+    height: 200px
+  }
+}

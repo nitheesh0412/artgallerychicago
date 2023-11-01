@@ -1,0 +1,24 @@
+.bi-suit-heart-fill{
+  color: red;
+
+  fill: red;
+}
+.card{
+  width: 20rem;
+  height: 30rem;
+}
+.card-img-top{
+  width: 20rem;
+  height: 300px;
+}
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .card{
+    width: 16rem;
+    height: 24rem;
+  }
+  .card-img-top{
+    width: 16rem;
+    height: 200px
+  }
+}

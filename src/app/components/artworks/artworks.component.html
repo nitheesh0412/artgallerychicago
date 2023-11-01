@@ -1,0 +1,26 @@
+<div class="row container-fluid">
+  <div *ngIf="!arts">
+    <mat-spinner></mat-spinner>
+  </div>
+  <div class=" ms-auto "  role="search">
+    <input class="form-control ms-auto me-2 searchBox shadow-lg bg-body rounded"  type="text" placeholder="Search" aria-label="Search" [(ngModel)]="filter" (input)="onInputChange()"/>
+  </div>
+  <div class="col-md-12">
+    <div *ngIf="artWorks" class="d-flex cards flex-wrap mb-3">
+      <div class="p-2 bd-highlight" *ngFor="let art of arts | paginate: { itemsPerPage: cardsPerPage, currentPage: currPage, totalItems : totalPages }">
+        <app-listarts [artDetails]="art"></app-listarts>
+      </div>
+
+    </div>
+    <div class="d-flex justify-content-center mb-5">
+      <select style="width: 75px;" [(ngModel)]="cardsPerPage" (change)="changePageSize()">
+        <option  value="5">5</option>
+        <option value="10">10</option>
+        <option value="20">20</option>
+        <option value="50">50</option>
+        <option value="100">100</option>
+      </select>
+      <pagination-controls  (pageChange)="onPageChange($event)"></pagination-controls>
+    </div>
+  </div>
+</div>
